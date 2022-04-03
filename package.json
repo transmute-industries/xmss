@@ -19,7 +19,7 @@
     "url": "https://github.com/transmute-industries/xmss.git"
   },
   "scripts": {
-    "postinstall": "npm run prepare",
+    "postinstall": "npm run build",
     "wasm": "./scripts/make-wasm.sh && node ./scripts/make-wasm-node-module.js",
     "prebuild": "npm run wasm",
     "build": "dts build",
