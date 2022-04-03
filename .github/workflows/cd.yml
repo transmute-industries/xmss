@@ -28,6 +28,14 @@ jobs:
       - name: Install
         run: npm i
 
+      - name: Test
+        run: npm t
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          commit_message: new wasm release
+
       - name: Setup npm profile
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc

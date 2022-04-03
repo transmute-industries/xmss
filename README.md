@@ -1,6 +1,6 @@
 # @transmute/xmss
 
-[![CI](https://github.com/transmute-industries/xmss/actions/workflows/ci.yml/badge.svg)](https://github.com/transmute-industries/xmss/actions/workflows/ci.yml)
+[![CI](https://github.com/transmute-industries/xmss/actions/workflows/ci.yml/badge.svg)](https://github.com/transmute-industries/xmss/actions/workflows/ci.yml) [![CD](https://github.com/transmute-industries/xmss/actions/workflows/cd.yml/badge.svg)](https://github.com/transmute-industries/xmss/actions/workflows/cd.yml)
 
 ```
 npm i @transmute/xmss --save
