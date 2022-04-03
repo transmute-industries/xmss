@@ -1,0 +1,38 @@
+{
+  "name": "@transmute/xmss",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "author": "Orie Steele",
+  "main": "dist/index.js",
+  "module": "dist/hello.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "wasm": "./scripts/make-wasm.sh && node ./scripts/make-wasm-node-module.js",
+    "prebuild": "npm run wasm",
+    "build": "dts build",
+    "lint": "dts lint",
+    "prepare": "dts build",
+    "start": "dts watch",
+    "pretest": "npm run wasm",
+    "test": "dts test"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "devDependencies": {
+    "base64url": "^3.0.1",
+    "dts-cli": "^1.4.0"
+  },
+  "dependencies": {
+    "browser-or-node": "^2.0.0",
+    "buffer": "^6.0.3",
+    "pako": "^2.0.4"
+  }
+}
