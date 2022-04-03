@@ -10,6 +10,14 @@
     "dist",
     "src"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/transmute-industries/xmss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/transmute-industries/xmss.git"
+  },
   "scripts": {
     "wasm": "./scripts/make-wasm.sh && node ./scripts/make-wasm-node-module.js",
     "prebuild": "npm run wasm",
@@ -18,7 +26,8 @@
     "prepare": "dts build",
     "start": "dts watch",
     "pretest": "npm run wasm",
-    "test": "dts test"
+    "test": "dts test",
+    "publish": "npm version patch && npm publish"
   },
   "jest": {
     "testEnvironment": "node"
