@@ -2,6 +2,10 @@
 
 [![CI](https://github.com/transmute-industries/xmss/actions/workflows/ci.yml/badge.svg)](https://github.com/transmute-industries/xmss/actions/workflows/ci.yml) [![CD](https://github.com/transmute-industries/xmss/actions/workflows/cd.yml/badge.svg)](https://github.com/transmute-industries/xmss/actions/workflows/cd.yml)
 
+### Requesting Assistance
+
+- https://lists.w3.org/Archives/Public/public-credentials/2022Apr/0007.html
+
 🚧 This is very experimental. Not for production use.
 
 ```
