@@ -1,5 +1,7 @@
 # @transmute/xmss
 
+[![CI](https://github.com/transmute-industries/xmss/actions/workflows/ci.yml/badge.svg)](https://github.com/transmute-industries/xmss/actions/workflows/ci.yml)
+
 ```
 npm i @transmute/xmss --save
 ```
@@ -9,10 +11,10 @@ Based on [danielhavir/go-xmss](https://github.com/danielhavir/go-xmss)
 ## Usage
 
 ```ts
-import { generate, sign, verify } from '@transmute/xmss';
+import { generate, sign, verify } from "@transmute/xmss";
 
-const message = Buffer.from('hello');
-const signature = 'AAAAACf...qRWhlbGxv';
+const message = Buffer.from("hello");
+const signature = "AAAAACf...qRWhlbGxv";
 const jwk = await generate();
 // const jwk = {
 //   kty: 'PQK',
