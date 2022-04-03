@@ -12,16 +12,13 @@ jobs:
         with:
           node-version: 14.x
 
-      - name: Use GoLang 14
+      - name: Use GoLang 1.17
         uses: actions/setup-go@v3
         with:
           go-version: "1.17.8"
 
       - name: Install
         run: npm i
-
-      - name: TEST WASM
-        run: ./scripts/make-wasm.sh
 
       - name: Test
         run: npm t

@@ -12,12 +12,18 @@ jobs:
     name: Publish unstable release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Begin CD...
+        uses: actions/checkout@v2
 
       - name: Use Node 14
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
+
+      - name: Use GoLang 1.17
+        uses: actions/setup-go@v3
+        with:
+          go-version: "1.17.8"
 
       - name: Install
         run: npm i
