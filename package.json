@@ -1,6 +1,6 @@
 {
   "name": "@transmute/xmss",
-  "version": "0.1.0",
+  "version": "0.1.25",
   "license": "Apache-2.0",
   "author": "Orie Steele",
   "main": "dist/index.js",
@@ -21,13 +21,13 @@
   "scripts": {
     "postinstall": "npm run build",
     "wasm": "./scripts/make-wasm.sh && node ./scripts/make-wasm-node-module.js",
+    "prebuild": "npm run wasm",
     "build": "dts build",
     "lint": "dts lint",
-    "prepare": "dts build",
     "start": "dts watch",
     "pretest": "npm run wasm",
     "test": "dts test",
-    "publish": "npm publish"
+    "publish:unstable": "npm version patch && npm publish"
   },
   "jest": {
     "testEnvironment": "node"
