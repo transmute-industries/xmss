@@ -21,14 +21,13 @@
   "scripts": {
     "postinstall": "npm run build",
     "wasm": "./scripts/make-wasm.sh && node ./scripts/make-wasm-node-module.js",
-    "prebuild": "npm run wasm",
     "build": "dts build",
     "lint": "dts lint",
     "prepare": "dts build",
     "start": "dts watch",
     "pretest": "npm run wasm",
     "test": "dts test",
-    "publish": "npm version patch && npm publish"
+    "publish": "npm publish"
   },
   "jest": {
     "testEnvironment": "node"
