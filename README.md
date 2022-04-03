@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/transmute-industries/xmss/actions/workflows/ci.yml/badge.svg)](https://github.com/transmute-industries/xmss/actions/workflows/ci.yml) [![CD](https://github.com/transmute-industries/xmss/actions/workflows/cd.yml/badge.svg)](https://github.com/transmute-industries/xmss/actions/workflows/cd.yml)
 
+🚧 This is very experimental. Not for production use.
+
 ```
 npm i @transmute/xmss --save
 ```
