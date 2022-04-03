@@ -11,8 +11,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
+
       - name: Install
         run: npm i
+
+      - name: TEST WASM
+        run: ./scripts/make-wasm.sh
 
       - name: Test
         run: npm t
