@@ -1,6 +1,6 @@
 {
   "name": "@transmute/xmss",
-  "version": "0.1.27",
+  "version": "0.1.28",
   "license": "Apache-2.0",
   "author": "Orie Steele",
   "main": "dist/index.js",
